@@ -114,7 +114,7 @@ def epoch_val(net,save_path,root):
 def get_args():
     parser = argparse.ArgumentParser(description='Get activation vectors')
     parser.add_argument('--dataset_dir',default="./data/cifar10",type=str,help="Number of members in ensemble")
-    parser.add_argument('--num_classes',default=10,type=int,help="Number of classes in dataset")
+    parser.add_argument('--num_classes',default=6,type=int,help="Number of classes in dataset")
     parser.add_argument('--means',nargs='+',default=[0.4914, 0.4822, 0.4465],type=float,help="channelwise means for normalization")
     parser.add_argument('--stds',nargs='+',default=[0.2023, 0.1994, 0.2010],type=float,help="channelwise std for normalization")
     parser.add_argument('--save_path',default="./saved_features/cifar10",type=str,help="Path to save the ensemble weights")
