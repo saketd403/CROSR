@@ -18,7 +18,7 @@ def get_args():
     parser.add_argument('--epochs',default=500,type=int,help="Number of training epochs")
     parser.add_argument('--batch_size',default=128,type=int,help="Batch size")
     parser.add_argument('--dataset_dir',default="./data/cifar10",type=str,help="Number of members in ensemble")
-    parser.add_argument('--num_classes',default=10,type=int,help="Number of classes in dataset")
+    parser.add_argument('--num_classes',default=6,type=int,help="Number of classes in dataset")
     parser.add_argument('--means',nargs='+',default=[0.4914, 0.4822, 0.4465], type=float,help="channelwise means for normalization")
     parser.add_argument('--stds',nargs='+',default=[0.2023, 0.1994, 0.2010],type=float,help="channelwise std for normalization")
     parser.add_argument('--momentum',default=0.9,type=float,help="momentum")
