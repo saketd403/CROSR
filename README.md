@@ -49,3 +49,7 @@ python compute_distances.py
 ```
 python compute_openmax.py
 ```
+
+## Results
+
+The AUROC score for CIFAR-10 with 6/4 split is 71.23.
